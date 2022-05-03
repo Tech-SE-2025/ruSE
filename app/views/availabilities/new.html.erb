@@ -1,0 +1,22 @@
+<h1>New availability</h1>
+
+<%= form_with model: [ @course, @course.availabilities.build ] do |form| %>
+<p>
+	<%= form.label :Day %>
+	<%= form.text_field :day %>
+</p>
+
+<p>
+	<%= form.label :start %>
+	<%= form.time_field :start_time %>
+</p>
+
+<p>
+	<%= form.label :End %>
+	<%= form.time_field :end_time %>
+</p>
+<%= form.submit %>
+<p>
+
+</p>
+<% end %>
